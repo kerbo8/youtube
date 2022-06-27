@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: row;">
+        <div style="background-color: lightblue;">div 1</div>
+        <div style="background-color: lightpink;">div 2</div>  
+    </div>
+
+    <div style="
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: row;">
+        <div style="background-color: lightblue; width: 100px;">100px</div>
+        <div style="background-color: lightpink;  flex: 1;">flex: 1</div>  
+    </div>
+
+    <div style="
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: row;">
+        <div style="background-color: lightblue; width: 100px;">100px</div>
+        <div style="background-color: lightpink; flex: 1;">flex: 1</div>  
+        <div style="background-color: lightblue; flex: 2;">flex: 2</div>
+    </div>
+
+    <div style="
+        margin-bottom: 30px;
+        height: 70px;
+        border: 1px solid gray;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        ">
+        <div style="background-color: lightblue; width: 100px;">100px</div>
+        <div style="background-color: lightpink; width: 100px;">100px</div>  
+        <div style="background-color: lightblue; width: 100px;">100px</div>
+    </div>
+
+    <div style="
+        margin-bottom: 30px;
+        height: 70px;
+        border: 1px solid gray;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        ">
+        <div style="background-color: lightblue; width: 100px;">100px</div>
+        <div style="background-color: lightpink; width: 100px;">100px</div>  
+        <div style="background-color: lightblue; width: 100px;">100px</div>
+    </div>
+
+    <div class="container">
+        <div class="inbox-label">ALL INBOXES</div>
+        <div class="email">
+            <div class="sender-pic"><img src="images/pbear1.jpg" class="profile-pic"></div>
+            <div class="email-content">
+                <div class="email-header">
+                    <div class="sender-name">Pink bear</div>
+                    <div class="send-time">4:48PM</div>
+                </div>
+                <div class="subject">Fred not pink bear is here</div>
+                <div class="content">Hello there, my name is pink bear and i m back...</div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <style>
+        /* inbox css*/
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            border: 2px solid lightgrey;
+            box-shadow: 0px 0px 10px lightgray;
+            padding: 15px 15px;
+            width: 400px;
+        }
+        .email{
+            display: flex;
+            align-items: center;
+        }
+        .sender-pic{
+            margin-right: 10px;
+        }
+        .profile-pic{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .email-header{
+            display: flex;
+            justify-content: space-between;
+        }
+        .email-content{
+            flex: 1;;
+        }
+        .sender-name{
+            font-weight: bold;
+            font-size: 19px;
+            margin-bottom: 3px;
+        }
+        .send-time{
+            font-size: 14px;
+            color: rgb(133, 130, 130);
+        }
+        .subject{
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .content{
+            font-size: 14px;
+            color: rgb(133, 130, 130);
+        }
+    </style>
+
+
+</body>
+</html>

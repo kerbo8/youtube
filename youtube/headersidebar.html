@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div class="left-section">
+            <div class="profile">
+                <div class="user-icon"><img src="images/pbear1.jpg" class="profile-pic"></div>
+                <div class="username"> Pink Bear</div>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="functions">
+                <div class="add-friend">Add Friend</div>
+                <div class="message">Message</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div class="friends">
+            <div><img src="images/cna.jpg" class="profile-pic"></div>
+            <div><img src="images/joji.jpg" class="profile-pic"></div>
+        </div>
+
+    </div>
+    <div class="sidebar2">
+        <p>Hello</p>
+    </div>
+    <style>
+        .header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            justify-content: space-between;
+            align-items: center;
+            background-color: lightgray;
+            display: flex;
+        }
+        .left-section{
+            margin-left: 100px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .profile{
+            display: flex;
+            align-items: center;
+        }
+        .user-icon{
+            margin-right: 20px;
+        }
+        .profile-pic{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .right-section{
+            margin-right: 50px;
+        }
+        .functions{
+            display: flex;
+        }
+        .add-friend{
+            background-color: blue;
+            padding: 10px 10px;
+            color: white;
+            border-radius: 5px;
+            margin-right: 5px;
+        }
+        .message{
+            background-color: gray;
+            color: black;
+            padding: 10px 10px;
+            border-radius: 5px;
+        }
+        .sidebar{
+            left: 0;
+            top: 64px;
+            bottom: 0;
+            background-color: gray;
+            position: fixed;
+            padding: 10px 10px;
+            width: 80px;
+        }
+        .friends{
+            margin-left: 15px;
+        }
+        .sidebar2{
+            left: 80px;
+            top: 64px;
+            bottom: 0;
+            position: fixed;
+            background-color: black;
+        }
+    </style>
+</body>
+</html>
